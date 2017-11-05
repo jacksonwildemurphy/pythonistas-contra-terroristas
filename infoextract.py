@@ -4,19 +4,36 @@ import sys
 #from spacy.en import English
 #parser = English()
 
+def extract_incident(story):
+	pass
+
+def extract_weapons(story):
+	pass
+
+def extract_perp_indiv(story):
+	pass
+
+def extract_perp_org(story):
+	pass
+
+def extract_target(story):
+	pass
+
+def extract_victim(story):
+	pass
 
 def line_is_story_id(line):
 	if "DEV-MUC3" in line or "TST1-MUC3" in line or "TST2-MUC4" in line:
-		print("Hey Jackson, this line is a story id:", line)
 		return True
 	return False
 
 def extract_info(story, story_id):
-	print("----------------------------")
-	print("ID:", story_id)
-	print(story)
-	print("----------------------------")
-
+	incident = extract_incident(story)
+	weapon = extract_weapons(story)
+	perp_indiv = extract_perp_indiv(story)
+	perp_org = extract_perp_org(story)
+	target = extract_target(story)
+	victim = extract_victim(story)
 
 if len(sys.argv) != 2:
 	print("Please specifiy a file.")
@@ -32,8 +49,9 @@ while line:
 		story_id = line.split()[0]
 		story = ""
 		line = file.readline()
-		'''while line and not line_is_story_id(line):
-			story += line'''
+		while line and not line_is_story_id(line):
+			story += line
+			line = file.readline()
 
 		extract_info(story, story_id)
 
