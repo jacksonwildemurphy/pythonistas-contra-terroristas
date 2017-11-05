@@ -40,4 +40,3 @@ while line:
 
 
 file.close()
-
