@@ -1,3 +1,5 @@
+# Written by Jackson Murphy and Kelsey Heidarian. Last updated November 5, 2017.
+
 #from numpy import dot
 #from numpy.linalg import norm
 import re
@@ -11,6 +13,12 @@ def count_arson_mentions(story):
 	pattern = re.compile(r"(\bburn|\bset fire|\bon fire)")
 	return len(re.findall(pattern, _story))
 
+# Returns the number of times a variation of the word "bomb" is found in the story
+def count_bombing_mentions(story):
+	_story = story.lower()
+	pattern = re.compile(r"(\bbomb)")
+	return len(re.findall(pattern, _story))
+
 # Returns the number of times a variation of the word "kidnap" or "abduct"
 # is found in the story
 def count_kidnapping_mentions(story):
@@ -18,26 +26,43 @@ def count_kidnapping_mentions(story):
 	pattern = re.compile("(kidnap|abduct)")
 	return len(re.findall(pattern, _story))
 
+# Returns 0 for now because robbery never appears in the test data
+def count_robbery_mentions(story):
+	return 0
+
+# Determines which type of incident is most likely, based on the
+# words found in the story. Arson and kidnapping take precedence in cases
+# where multiple types of incidents are mentioned, as words associated with
+# "bombing" and "attack" are sometimes found in arson and kidnapping events
+def determine_incident(arson_mentions, bombing_mentions, kidnapping_mentions):
+	if bombing_mentions > 0 and kidnapping_mentions > 0:
+		pass
+		#print("story had references to both bombing and kidnapping!")
+	if bombing_mentions > 0 and arson_mentions > 0:
+		pass
+		#print("story had references to both bombing and arson!")
+	if arson_mentions > 0:
+		#arson_stories[0] += 1
+		return "ARSON"
+	elif kidnapping_mentions > 0:
+		#kidnapping_stories[0] += 1
+		return "KIDNAPPING"
+	elif bombing_mentions > 0:
+		#bombing_stories[0] += 1
+		return "BOMBING"
+	else:	# "attack" seems a good catchall, according to the train data
+		#attack_stories[0] += 1
+		return "ATTACK"
 
 # Returns the incident of the story. The 5 possible incidents are:
 # "arson", "attack", "bombing", "kidnapping", or "robbery"
 def extract_incident(story):
 	arson_mentions = count_arson_mentions(story)
-	#attack_mentions = count_attack_mentions(story)
-	#bombing_mentions = count_bombing_mentions(story)
+	bombing_mentions = count_bombing_mentions(story)
 	kidnapping_mentions = count_kidnapping_mentions(story)
-	#robbery_mentions = count_robbery_mentions(story)
-	if arson_mentions > 0 and kidnapping_mentions > 0:
-		print("story had references to both arson and kidnapping!")
-	elif arson_mentions > 0:
-		arson_stories[0] += 1
-		return "arson"
-	elif kidnapping_mentions > 0:
-		kidnapping_stories[0] += 1
-		return "kidnapping"
-	# incident = determine_incident(
-	# 	arson_mentions, attack_mentions, bombing_mentions, kidnapping_mentions, robbery_mentions)
-
+	incident = determine_incident(
+		arson_mentions, bombing_mentions, kidnapping_mentions)
+	return incident
 
 def extract_weapons(story):
 	pass
@@ -66,17 +91,17 @@ def extract_info(story, story_id):
 	# perp_org = extract_perp_org(story)
 	# target = extract_target(story)
 	# victim = extract_victim(story)
-	# print("Finished story!\n")
-	if incident == "arson":
-		print(story_id, "was tagged as arson")
-	elif incident == "kidnapping":
-		print(story_id, "was tagged as kidnapping")
+	print("ID:", story_id)
+	print("INCIDENT:", incident)
+	print("WEAPON: -")
+	print("PERP INDIV: -")
+	print("PERP ORG: -")
+	print("TARGET: -")
+	print("VICTIM: -")
+	print()
 
 
 ###### START OF PROGRAM ######
-
-arson_stories = [0]
-kidnapping_stories = [0]
 
 if len(sys.argv) != 2:
 	print("Please specifiy a file.")
@@ -97,8 +122,5 @@ while line:
 			line = file.readline()
 
 		extract_info(story, story_id)
-
-print("Identified arson as the incident for this many stories:", arson_stories[0])
-print("Identified kidnapping as the incident for this many stories:", kidnapping_stories[0])
 
 file.close()
