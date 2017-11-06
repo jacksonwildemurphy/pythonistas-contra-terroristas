@@ -8,7 +8,7 @@ import sys
 # Returns the number of times a variation of the word "arson" is found in the story
 def count_arson_mentions(story):
 	_story = story.lower()
-	pattern = re.compile("(\bburn|\bablaze|\bset fire|\bon fire\b)")
+	pattern = re.compile(r"(\bburn|\bablaze|\bset fire|\bon fire\b)")
 	return len(re.findall(pattern, _story))
 
 # Returns the number of times a variation of the word "kidnap" or "abduct"
@@ -31,8 +31,10 @@ def extract_incident(story):
 		print("story had references to both arson and kidnapping!")
 	elif arson_mentions > 0:
 		arson_stories[0] += 1
+		return "arson"
 	elif kidnapping_mentions > 0:
 		kidnapping_stories[0] += 1
+		return "kidnapping"
 	# incident = determine_incident(
 	# 	arson_mentions, attack_mentions, bombing_mentions, kidnapping_mentions, robbery_mentions)
 
@@ -66,9 +68,9 @@ def extract_info(story, story_id):
 	# victim = extract_victim(story)
 	# print("Finished story!\n")
 	if incident == "arson":
-		arson_stories[0] += 1
+		print(story_id, "was tagged as arson")
 	elif incident == "kidnapping":
-		kidnapping_stories[0] += 1
+		print(story_id, "was tagged as kidnapping")	
 
 
 ###### START OF PROGRAM ######
