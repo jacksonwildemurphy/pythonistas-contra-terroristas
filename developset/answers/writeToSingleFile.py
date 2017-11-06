@@ -4,7 +4,7 @@ NOTE: This file must be in the same directory as the text files.
 '''
 
 import os
-out_file = open("all_text.txt", 'w')
+out_file = open("all_answerkeys.txt", 'w+')
 for filename in os.listdir(os.getcwd()):
 	file = open(filename, 'r')
 	text = file.read()
