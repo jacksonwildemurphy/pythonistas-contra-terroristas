@@ -6,6 +6,7 @@ import re
 import spacy
 nlp = spacy.load("en")
 import sys
+import operator
 
 # constants for proper print spacing
 ID_SPACING = "\t" * 7
@@ -67,7 +68,21 @@ def determine_incident(arson_mentions, bombing_mentions, kidnapping_mentions):
 # Returns the first word in the story that matches a weapon associated with
 # bombing, according to the training data
 def get_bombing_weapon(story):
-	
+
+def get_attack_weapons(story):
+  weapon_strings = ['BOMB', 'BOMBS', 'ROCKET', 'ROCKETS', 'MACHINE GUN', 'MACHINEGUNS',
+  'MACHINEGUN', 'SUBMACHINEGUN', 'DYNAMITE', 'GRENADE', 'GRENADES', 'AK 47S', 'BULLET',
+  'BULLETS',  'MORTAR']
+  weapon_count = {w: 0 for w in weapon_strings}
+  story_list = story.split()
+  for word in story_list:
+    if word in weapon_strings:
+      weapon_count[word] += 1
+  sorted_weapons = sorted(weapon_count.items(), key=operator.itemgetter(1))
+  if sorted_weapons[-1][1] != 0:
+    return sorted_weapons[-1][0]
+  else:
+    return '-'
 
 # Returns the incident of the story. The 5 possible incidents are:
 # "arson", "attack", "bombing", "kidnapping", or "robbery"
@@ -79,6 +94,7 @@ def extract_incident(story):
 		arson_mentions, bombing_mentions, kidnapping_mentions)
 	return incident
 
+
 # Returns the weapons used in the terrorist incident, or "-"
 # if no weapons were found.
 def extract_weapons(story, incident):
@@ -87,7 +103,10 @@ def extract_weapons(story, incident):
 	elif incident == "BOMBING":
 		return get_bombing_weapon(story)
 	else:
-		return get_attack_weapon(story)
+		return get_attack_weapons(story)
+
+
+
 
 
 def extract_perp_indiv(story):
@@ -110,13 +129,14 @@ def line_is_story_id(line):
 def extract_info(story, story_id, output_file):
 	incident = extract_incident(story)
 	weapon = extract_weapons(story, incident)
+
 	# perp_indiv = extract_perp_indiv(story)
 	# perp_org = extract_perp_org(story)
 	# target = extract_target(story)
 	# victim = extract_victim(story)
 	output_file.write("ID:" + ID_SPACING + story_id + "\n")
 	output_file.write("INCIDENT:" + INCIDENT_SPACING + incident + "\n")
-	output_file.write("WEAPON:" + WEAPON_SPACING + "-" + "\n")
+	output_file.write("WEAPON:" + WEAPON_SPACING + weapon + "\n")
 	output_file.write("PERP INDIV:" + PERP_INDIV_SPACING + "-" + "\n")
 	output_file.write("PERP ORG:" + PERP_ORG_SPACING + "-" + "\n")
 	output_file.write("TARGET:" + TARGET_SPACING + "-" + "\n")
