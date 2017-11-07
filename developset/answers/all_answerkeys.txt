@@ -2705,7 +2705,7 @@ PERP INDIV:     UNIDENTIFIED INDIVIDUALS / UNKNOWN NUMBER OF INDIVIDUALS
 PERP ORG:       -
 TARGET:         THE DIPLOMATIC PREMISES / THE U.S. CONSULATE
                 THE DEFENSE MINISTRY'S PARKING LOT
-                TWO CARS     
+                TWO CARS
                 AUSTRALIAN INTERNATIONAL TRANSPORT FIRM
                 ISRAELI COMMUNITY OFFICE
                 FRUIT EXPORTING FIRM
@@ -2928,18 +2928,3 @@ PERP ORG:       ARMY OF NATIONAL LIBERATION
 TARGET:         -
 VICTIM:         CARLOS MARCELO
                 BRASPETRO [PETROBRAS INTERNATIONAL, INC.] ENGINEERS / ENGINEERS
-
-'''
-Reads in all the text files and writes them to a single file.
-NOTE: This file must be in the same directory as the text files.
-'''
-
-import os
-out_file = open("all_answerkeys.txt", 'w+')
-for filename in os.listdir(os.getcwd()):
-	file = open(filename, 'r')
-	text = file.read()
-	out_file.write(text)
-	file.close()
-
-out_file.close()

@@ -64,6 +64,11 @@ def determine_incident(arson_mentions, bombing_mentions, kidnapping_mentions):
 		#attack_stories[0] += 1
 		return "ATTACK"
 
+# Returns the first word in the story that matches a weapon associated with
+# bombing, according to the training data
+def get_bombing_weapon(story):
+	
+
 # Returns the incident of the story. The 5 possible incidents are:
 # "arson", "attack", "bombing", "kidnapping", or "robbery"
 def extract_incident(story):
@@ -74,8 +79,16 @@ def extract_incident(story):
 		arson_mentions, bombing_mentions, kidnapping_mentions)
 	return incident
 
-def extract_weapons(story):
-	pass
+# Returns the weapons used in the terrorist incident, or "-"
+# if no weapons were found.
+def extract_weapons(story, incident):
+	if incident == "ARSON" or incident == "KIDNAPPING":
+		return "-" # no training samples had a weapon for these incident types
+	elif incident == "BOMBING":
+		return get_bombing_weapon(story)
+	else:
+		return get_attack_weapon(story)
+
 
 def extract_perp_indiv(story):
 	pass
@@ -96,7 +109,7 @@ def line_is_story_id(line):
 
 def extract_info(story, story_id, output_file):
 	incident = extract_incident(story)
-	# weapon = extract_weapons(story)
+	weapon = extract_weapons(story, incident)
 	# perp_indiv = extract_perp_indiv(story)
 	# perp_org = extract_perp_org(story)
 	# target = extract_target(story)
