@@ -68,21 +68,23 @@ def determine_incident(arson_mentions, bombing_mentions, kidnapping_mentions):
 # Returns the first word in the story that matches a weapon associated with
 # bombing, according to the training data
 def get_bombing_weapon(story):
+	pass
 
-def get_attack_weapons(story):
-  weapon_strings = ['BOMB', 'BOMBS', 'ROCKET', 'ROCKETS', 'MACHINE GUN', 'MACHINEGUNS',
-  'MACHINEGUN', 'SUBMACHINEGUN', 'DYNAMITE', 'GRENADE', 'GRENADES', 'AK 47S', 'BULLET',
-  'BULLETS',  'MORTAR']
-  weapon_count = {w: 0 for w in weapon_strings}
-  story_list = story.split()
-  for word in story_list:
-    if word in weapon_strings:
-      weapon_count[word] += 1
-  sorted_weapons = sorted(weapon_count.items(), key=operator.itemgetter(1))
-  if sorted_weapons[-1][1] != 0:
-    return sorted_weapons[-1][0]
-  else:
-    return '-'
+# Returns the weapons found in the story
+def get_attack_or_bombing_weapon(story):
+	weapon_strings = ['BOMB', 'BOMBS', 'ROCKET', 'ROCKETS', 'MACHINE GUN', 'MACHINEGUNS',
+	'MACHINEGUN', 'SUBMACHINEGUN', 'DYNAMITE', 'GRENADE', 'GRENADES', 'AK 47S', 'BULLET',
+	'BULLETS',  'MORTAR']
+	weapon_count = {w: 0 for w in weapon_strings}
+	story_list = story.split()
+	for word in story_list:
+		if word in weapon_strings:
+			weapon_count[word] += 1
+	sorted_weapons = sorted(weapon_count.items(), key=operator.itemgetter(1))
+	if sorted_weapons[-1][1] != 0:
+		return sorted_weapons[-1][0]
+	else:
+		return '-'
 
 # Returns the incident of the story. The 5 possible incidents are:
 # "arson", "attack", "bombing", "kidnapping", or "robbery"
@@ -94,20 +96,13 @@ def extract_incident(story):
 		arson_mentions, bombing_mentions, kidnapping_mentions)
 	return incident
 
-
 # Returns the weapons used in the terrorist incident, or "-"
 # if no weapons were found.
-def extract_weapons(story, incident):
+def extract_weapon(story, incident):
 	if incident == "ARSON" or incident == "KIDNAPPING":
 		return "-" # no training samples had a weapon for these incident types
-	elif incident == "BOMBING":
-		return get_bombing_weapon(story)
 	else:
-		return get_attack_weapons(story)
-
-
-
-
+		return get_attack_or_bombing_weapon(story)
 
 def extract_perp_indiv(story):
 	pass
@@ -128,7 +123,7 @@ def line_is_story_id(line):
 
 def extract_info(story, story_id, output_file):
 	incident = extract_incident(story)
-	weapon = extract_weapons(story, incident)
+	weapon = extract_weapon(story, incident)
 
 	# perp_indiv = extract_perp_indiv(story)
 	# perp_org = extract_perp_org(story)

@@ -48,7 +48,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0042
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -64,7 +64,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0059
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -80,7 +80,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0075
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -88,7 +88,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0078
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -120,7 +120,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0100
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -128,7 +128,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0106
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -160,7 +160,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0160
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -176,7 +176,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0198
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -208,7 +208,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0220
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -248,7 +248,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0258
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -312,7 +312,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0293
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -344,7 +344,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0302
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -352,7 +352,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0310
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -392,7 +392,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0334
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -408,7 +408,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0338
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -448,7 +448,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0355
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -568,7 +568,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0407
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					ROCKET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -576,7 +576,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0420
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -608,7 +608,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0449
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -648,7 +648,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0523
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -680,7 +680,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0550
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -704,7 +704,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0563
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -712,7 +712,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0568
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -760,7 +760,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0586
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					GRENADE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -776,7 +776,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0592
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -784,7 +784,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0601
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					ROCKET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -800,7 +800,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0605
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -824,7 +824,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0619
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -832,7 +832,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0620
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -840,7 +840,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0624
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -848,7 +848,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0625
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -864,7 +864,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0634
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -872,7 +872,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0635
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -928,7 +928,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0644
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -976,7 +976,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0667
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -984,7 +984,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0675
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					MACHINEGUNS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -992,7 +992,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0677
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					MACHINEGUN
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1056,7 +1056,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0708
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					ROCKETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1096,7 +1096,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0760
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1104,7 +1104,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0762
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1112,7 +1112,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0766
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1128,7 +1128,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0771
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					GRENADE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1144,7 +1144,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0777
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					ROCKETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1160,7 +1160,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0779
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					MACHINEGUNS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1176,7 +1176,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0781
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1216,7 +1216,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0787
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					MACHINEGUNS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1352,7 +1352,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0826
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					MACHINEGUNS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1360,7 +1360,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0828
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1392,7 +1392,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0848
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1440,7 +1440,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0873
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1464,7 +1464,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0883
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1536,7 +1536,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0938
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1552,7 +1552,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0943
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1560,7 +1560,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0945
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1576,7 +1576,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0948
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1592,7 +1592,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0955
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1672,7 +1672,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0977
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1704,7 +1704,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0987
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1728,7 +1728,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-0998
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1784,7 +1784,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1024
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1792,7 +1792,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1032
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1936,7 +1936,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1068
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1952,7 +1952,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1078
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -1984,7 +1984,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1100
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					ROCKETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2008,7 +2008,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1106
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2016,7 +2016,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1107
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					DYNAMITE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2024,7 +2024,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1118
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					GRENADE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2088,7 +2088,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1175
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2128,7 +2128,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1181
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BULLET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2184,7 +2184,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1207
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2192,7 +2192,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1208
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2224,7 +2224,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1229
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					ROCKET
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2256,7 +2256,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1233
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					BULLETS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2272,7 +2272,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1235
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					MACHINEGUN
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2288,7 +2288,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1240
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					MACHINEGUN
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2432,7 +2432,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1283
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2448,7 +2448,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1292
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMBS
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2464,7 +2464,7 @@ VICTIM:					-
 
 ID:							DEV-MUC3-1296
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					GRENADE
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2488,7 +2488,7 @@ VICTIM:					-
 
 ID:							TST1-MUC3-0006
 INCIDENT:				ATTACK
-WEAPON:					-
+WEAPON:					SUBMACHINEGUN
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2536,7 +2536,7 @@ VICTIM:					-
 
 ID:							TST1-MUC3-0090
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2544,7 +2544,7 @@ VICTIM:					-
 
 ID:							TST1-MUC3-0093
 INCIDENT:				BOMBING
-WEAPON:					-
+WEAPON:					BOMB
 PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
@@ -2629,3 +2629,4 @@ PERP INDIV:			-
 PERP ORG:				-
 TARGET:					-
 VICTIM:					-
+
