@@ -7,6 +7,16 @@ import spacy
 nlp = spacy.load("en")
 import sys
 
+# constants for proper print spacing
+ID_SPACING = "\t" * 7
+INCIDENT_SPACING = "\t" * 4
+WEAPON_SPACING = "\t" * 5
+PERP_INDIV_SPACING = "\t" * 3
+PERP_ORG_SPACING = "\t" * 4
+TARGET_SPACING = "\t" * 5
+VICTIM_SPACING = "\t" * 5
+
+
 # Returns the number of times a variation of the word "arson" is found in the story
 def count_arson_mentions(story):
 	_story = story.lower()
@@ -84,21 +94,21 @@ def line_is_story_id(line):
 		return True
 	return False
 
-def extract_info(story, story_id):
+def extract_info(story, story_id, output_file):
 	incident = extract_incident(story)
 	# weapon = extract_weapons(story)
 	# perp_indiv = extract_perp_indiv(story)
 	# perp_org = extract_perp_org(story)
 	# target = extract_target(story)
 	# victim = extract_victim(story)
-	print("ID:", story_id)
-	print("INCIDENT:", incident)
-	print("WEAPON: -")
-	print("PERP INDIV: -")
-	print("PERP ORG: -")
-	print("TARGET: -")
-	print("VICTIM: -")
-	print()
+	output_file.write("ID:" + ID_SPACING + story_id + "\n")
+	output_file.write("INCIDENT:" + INCIDENT_SPACING + incident + "\n")
+	output_file.write("WEAPON:" + WEAPON_SPACING + "-" + "\n")
+	output_file.write("PERP INDIV:" + PERP_INDIV_SPACING + "-" + "\n")
+	output_file.write("PERP ORG:" + PERP_ORG_SPACING + "-" + "\n")
+	output_file.write("TARGET:" + TARGET_SPACING + "-" + "\n")
+	output_file.write("VICTIM:" + VICTIM_SPACING + "-" + "\n")
+	output_file.write("\n")
 
 
 ###### START OF PROGRAM ######
@@ -107,20 +117,23 @@ if len(sys.argv) != 2:
 	print("Please specifiy a file.")
 	sys.exit(2)
 
-file_name = sys.argv[1]
-file = open(file_name, 'r')
-line = file.readline()
+input_file_name = sys.argv[1]
+input_file = open(input_file_name, 'r')
+line = input_file.readline()
+output_file = open(input_file_name + ".templates", "w+")
+
 while line:
 	while not line_is_story_id(line):
-		line = file.readline()
+		line = input_file.readline()
 	if line_is_story_id(line):
 		story_id = line.split()[0]
 		story = ""
-		line = file.readline()
+		line = input_file.readline()
 		while line and not line_is_story_id(line):
 			story += line
-			line = file.readline()
+			line = input_file.readline()
 
-		extract_info(story, story_id)
+		extract_info(story, story_id, output_file)
 
-file.close()
+input_file.close()
+output_file.close()
