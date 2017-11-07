@@ -3,8 +3,8 @@
 #from numpy import dot
 #from numpy.linalg import norm
 import re
-import spacy
-nlp = spacy.load("en")
+#import spacy
+#nlp = spacy.load("en")
 import sys
 import operator
 
